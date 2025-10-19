@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +9,11 @@
     <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-auth-compat.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
         <div class="form-container" id="login-form">
-            <h2>Welcome Back</h2>
+            <h2>Mini Hackathon</h2>
             <div class="success-message" id="logout-success">You have been successfully logged out.</div>
             <div class="success-message" id="register-success">Account created successfully! Please log in.</div>
             <div class="error-message-global" id="login-error">Invalid email or password. Please try again.</div>
@@ -29,13 +31,13 @@
                 <div class="loading" id="login-loading">
                     <div class="spinner"></div>
                 </div>
-                <button type="submit" class="btn">Login</button>
+                <button type="submit" class="btn">Login</button> 
             </form>
             <div class="toggle-text">
                 Don't have an account? <span class="toggle-link" id="show-register">Sign up</span>
             </div>
         </div>
-        
+
         <div class="form-container" id="register-form" style="display: none;">
             <h2>Create Account</h2>
             <div class="error-message-global" id="register-error">Error creating account. Please try again.</div>
@@ -65,13 +67,14 @@
                 </div>
                 <button type="submit" class="btn">Sign Up</button>
             </form>
-            <div class="toggle-text">   
+            <div class="toggle-text">
                 Already have an account? <span class="toggle-link" id="show-login">Sign in</span>
             </div>
         </div>
-        
-        </div>
+
+    </div>
 
     <script src="app.js"></script>
 </body>
+
 </html>
